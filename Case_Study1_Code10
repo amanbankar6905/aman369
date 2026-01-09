@@ -1,0 +1,10 @@
+# Given list of numbers
+numbers = [12, 24, 35, 24, 88, 120, 155]
+
+# Use list comprehension to filter out all occurrences of 24
+# Iterates through each element x in the numbers list
+# Keeps only elements where x is not equal to 24
+result = [x for x in numbers if x != 24]
+
+# Print the filtered list without 24
+print(result)

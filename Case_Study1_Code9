@@ -1,0 +1,36 @@
+# Given list
+"""
+This function removes duplicate elements from a given list while preserving the original order of elements.
+Parameters:
+    lst (list): The input list from which duplicates need to be removed.
+Returns:
+    list: A new list containing only the unique elements from the input list, in the order they first appeared.
+Workflow:
+1. Initialize an empty set `seen` to keep track of elements that have already been encountered.
+2. Initialize an empty list `result` to store the unique elements.
+3. Iterate through each item in the input list `lst`.
+4. For each item, check if it is not in the `seen` set:
+   - If it is not, add it to the `seen` set and append it to the `result` list.
+5. After processing all items, return the `result` list containing only unique elements.
+"""
+original_list = [12, 24, 35, 24, 88, 120, 155, 88, 120, 155]
+
+# Remove duplicates while preserving order
+def remove_duplicates(lst):
+    seen = set()
+    result = []
+    for item in lst:
+        if item not in seen:
+            seen.add(item)
+            result.append(item)
+    return result
+
+# Print the list after removing duplicates
+unique_list = remove_duplicates(original_list)
+print(unique_list)
+"The parameter lst is called a function parameter.
+"Specifically:"
+"lst is the formal parameter name used in the function definition def remove_duplicates(lst):
+"It represents a placeholder for the list that will be passed to the function when it's called
+"When you call remove_duplicates(original_list), the argument original_list gets assigned to the parameter lst
+"In this case, lst is a list parameter that allows the function to accept any list as input and process it to remove duplicates while preserving order"

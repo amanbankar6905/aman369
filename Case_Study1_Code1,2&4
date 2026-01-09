@@ -1,0 +1,17 @@
+# Create a set from a list with duplicate elements, automatically removing duplicates
+nums = set([1, 1, 2, 3, 3, 3, 4, 4])
+# Print the number of unique elements in the set (length is 4: {1, 2, 3, 4})
+print(len(nums))
+
+# Create a dictionary with keys (names) and values (ages)
+d = {"john": 40, "peter": 45}
+# Extract all keys from the dictionary and convert to a list, then print them
+print(list(d.keys()))
+
+# Create a list of numbers
+a = [4, 7, 3, 2, 5, 9]
+# Use enumerate() to iterate through the list with both index and value
+# enumerate() returns pairs of (index, value) for each element
+for index, value in enumerate(a):
+    # Print each element's index position and its corresponding value
+    print(f"Index: {index}, Value: {value}")

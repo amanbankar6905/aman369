@@ -1,0 +1,13 @@
+# Original list of numbers
+numbers = [12, 24, 35, 70, 88, 120, 155]
+
+# Use list comprehension to filter numbers based on divisibility conditions
+# Iterate through each number in the list
+# Keep only numbers that satisfy BOTH conditions:
+#   - num % 5 != 0: number is NOT divisible by 5 (remainder is not zero)
+#   - num % 7 != 0: number is NOT divisible by 7 (remainder is not zero)
+# This filters out: 35 (divisible by 5 and 7), 70 (divisible by 5 and 7), 120 (divisible by 5), 155 (divisible by 5)
+result = [num for num in numbers if num % 5 != 0 and num % 7 != 0]
+
+# Print the resulting list containing only numbers not divisible by 5 or 7
+print(result)

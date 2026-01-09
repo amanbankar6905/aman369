@@ -1,0 +1,21 @@
+# Program to compute the sum: 1/2 + 2/3 + 3/4 + ... + n/(n+1)
+# This series adds fractions where numerator and denominator are consecutive integers
+
+# Get input from user
+n = int(input("Enter a positive integer n: "))
+
+# Validate input
+if n <= 0:
+    print("Please enter a positive integer greater than 0")
+else:
+    # Initialize sum to store the result
+    total_sum = 0
+    
+    # Loop from 1 to n (inclusive)
+    for i in range(1, n + 1):
+        # Add the fraction i/(i+1) to the total sum
+        # Each iteration computes one term of the series
+        total_sum += i / (i + 1)
+    
+    # Display the result rounded to 2 decimal places
+    print(f"Sum = {total_sum:.2f}")

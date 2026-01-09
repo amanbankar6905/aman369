@@ -1,0 +1,18 @@
+# Import the random module for generating random selections
+import random
+
+# Generate a list of numbers divisible by both 5 and 7 (i.e., divisible by 35)
+# range(35, 1001, 35) creates a sequence starting at 35, ending before 1001, with step 35
+# This produces: [35, 70, 105, 140, ..., 980]
+# List comprehension [n for n in ...] builds a list containing all these numbers
+numbers_divisible_by_35 = [n for n in range(35, 1001, 35)]
+
+# random.sample() selects k unique random elements from the list without replacement
+# Parameters:
+#   - numbers_divisible_by_35: the population to choose from
+#   - 5: the number of unique elements to randomly select
+# Returns a list of 5 randomly selected numbers from numbers_divisible_by_35
+random_numbers = random.sample(numbers_divisible_by_35, 5)
+
+# Print the list of 5 randomly selected numbers
+print(random_numbers)

@@ -1,0 +1,11 @@
+# Read input string from console
+s = input("Enter a string: ")
+
+# Count frequencies preserving first-occurrence order
+char_count = {}
+for char in s:
+    char_count[char] = char_count.get(char, 0) + 1
+
+# Print results as char,count pairs concatenated (no separators)
+for char, count in char_count.items():
+    print(f"{char},{count}", end="")

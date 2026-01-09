@@ -1,0 +1,13 @@
+# Original list of numbers
+numbers = [12, 24, 35, 70, 88, 120, 155]
+
+# Remove elements at specific indices (0th, 4th, and 5th) using list comprehension
+# enumerate(numbers) returns pairs of (index, value) for each element in the list
+# index is the position of the element (0-based indexing)
+# num is the actual value at that position
+# The condition 'if index not in (0, 4, 5)' keeps only elements whose indices are NOT 0, 4, or 5
+# This filters out: 12 (index 0), 88 (index 4), and 120 (index 5)
+filtered_numbers = [num for index, num in enumerate(numbers) if index not in (0, 4, 5)]
+
+# Print the resulting list with specified elements removed
+print(filtered_numbers)
